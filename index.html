@@ -1,1 +1,222 @@
-<!DOCTYPE html><html lang="en"><head>  <meta charset="utf-8" />  <meta name="viewport" content="width=device-width, initial-scale=1" />  <title>Cepatantar - Coming Soon</title>  <style>    body {      margin: 0;      font-family: 'Arial', sans-serif;      background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);      display: flex;      height: 100vh;      align-items: center;      justify-content: center;      color: white;      text-align: center;      padding: 0 20px;    }    .container {      max-width: 600px;      background: rgba(0,0,0,0.3);      border-radius: 20px;      padding: 40px 30px;      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);      backdrop-filter: blur(8.5px);      -webkit-backdrop-filter: blur(8.5px);      border: 1px solid rgba(255, 255, 255, 0.18);    }    h1 {      font-size: 3.5rem;      margin-bottom: 0.3em;      letter-spacing: 2px;    }    p {      font-size: 1.25rem;      margin-bottom: 1.5em;    }    input[type='email'] {      width: 80%;      padding: 15px;      border-radius: 40px;      border: none;      font-size: 1rem;      text-align: center;      margin-bottom: 20px;      outline: none;      transition: background-color 0.3s ease;    }    input[type='email']:focus {      background-color: rgba(255, 255, 255, 0.2);      color: white;    }    button {      background-color: #4e9af1;      color: white;      border: none;      padding: 15px 40px;      border-radius: 40px;      font-weight: 700;      font-size: 1rem;      cursor: pointer;      transition: background-color 0.3s ease;    }    button:hover {      background-color: #3a7bce;    }    footer {      margin-top: 30px;      font-size: 0.85rem;      color: #ccc;      font-style: italic;    }  </style></head><body>  <div class="container">    <h1>Cepatantar</h1>    <p>Coming Soon - The Safe, Anonymous Companionship Platform</p>    <form onsubmit="subscribe(event)">      <input type="email" id="email" placeholder="Enter your email to join the waitlist" required />      <br />      <button type="submit">Join the Waitlist ??</button>    </form>    <footer>      <p>� 2025 Cepatantar. Not a dating app. Privacy & Safety first.</p>    </footer>  </div>  <script>    function subscribe(e) {      e.preventDefault();      alert('Thank you for joining the waitlist! We will keep you updated.');      document.getElementById('email').value = '';    }  </script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cepatantar – Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Open Sans', Arial, sans-serif;
+      background: radial-gradient(ellipse at 40% 20%, #e6eeff 80%, #d0d8e7 100%);
+      color: #263246;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .nav {
+      width: 100vw;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 28px 38px 0 38px;
+      box-sizing: border-box;
+      gap: 22px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .nav a {
+      color: #4666f5;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 0 14px;
+      font-size: 1.08rem;
+      opacity: 0.8;
+      transition: opacity .15s;
+    }
+    .nav a.login {
+      border: 1.5px solid #4666f5;
+      border-radius: 18px;
+      padding: 5px 22px;
+      opacity: 1;
+    }
+    .nav a.cta {
+      background: #4666f5;
+      color: #fff;
+      border: none;
+      border-radius: 18px;
+      padding: 8px 26px;
+      font-weight: 700;
+      margin-left: 16px;
+      opacity: 1;
+      text-shadow: 0 1px 8px #758af458;
+      font-family: 'Montserrat', Arial, sans-serif;
+    }
+    @media (max-width: 700px) {
+      .nav { flex-wrap: wrap; padding: 15px 10px 0 10px; gap: 8px; }
+      .nav a { margin: 0 7px; }
+      .nav a.cta { margin-left: 6px; }
+    }
+    .center-box {
+      margin-top: 90px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 12px 32px rgba(61,76,120,0.09);
+      padding: 50px 38px 38px 38px;
+      max-width: 480px;
+      width: 92vw;
+      text-align: center;
+    }
+    .soon-label {
+      display: inline-block;
+      font-size: 1rem;
+      background: #eaf3ff;
+      color: #4666f5;
+      font-weight: 600;
+      border-radius: 18px;
+      padding: 7px 20px 7px 22px;
+      margin-bottom: 22px;
+      letter-spacing: 1px;
+    }
+    h1 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 2.45rem;
+      font-weight: 800;
+      margin: 0 0 10px 0;
+      color: #253052;
+    }
+    .big {
+      font-family: 'Montserrat', Arial, sans-serif;
+      color: #4e82f0;
+      font-weight: 800;
+      font-size: 2.8rem;
+      margin-bottom: 0.8em;
+      line-height: 1.12;
+    }
+    .sub {
+      font-size: 1.16rem;
+      margin: 0 0 16px 0;
+      color: #415190;
+      font-weight: 500;
+    }
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-top: 28px;
+      margin-bottom: 32px;
+    }
+    .feature {
+      flex: 1 1 118px;
+      min-width: 105px;
+      background: #f8fafd;
+      border-radius: 12px;
+      padding: 18px 0 10px;
+      text-align: center;
+      box-shadow: 0 4px 18px rgba(80, 130, 240, 0.06);
+    }
+    .feature i {
+      font-size: 2.1em;
+      display: block;
+      margin-bottom: 8px;
+      color: #4666f5;
+    }
+    .feature span {
+      display: block;
+      font-weight: 600;
+      font-size: 1.04em;
+      color: #3a446c;
+    }
+    .email-form {
+      margin-top: 22px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+    }
+    .email-form input[type='email'] {
+      border-radius: 5px;
+      border: 1.5px solid #cce1fd;
+      padding: 12px 13px;
+      font-size: 1.05rem;
+      outline: none;
+      width: 65%;
+      max-width: 235px;
+    }
+    .email-form button {
+      background: #4666f5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 12px 28px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .email-form button:hover {
+      background: #2061be;
+    }
+    .footer {
+      margin-top: 48px;
+      font-size: 1.01rem;
+      color: #b3b8c8;
+      text-align: center;
+      width: 100vw;
+    }
+    @media (max-width:525px) {
+      .center-box { padding: 26px 2vw 22px 2vw; }
+      h1, .big, .soon-label { font-size: 6vw; }
+      .big { font-size: 7vw; }
+      .features { gap: 10px; }
+    }
+  </style>
+  <!-- For icons, use Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/9e8c1e9e7a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="nav">
+    <a href="#how-it-works">How It Works</a>
+    <a href="#find-antar">Find an Antar</a>
+    <a href="#pricing">Pricing</a>
+    <a class="login" href="#">Log In</a>
+    <a class="cta" href="#">Get Started</a>
+  </nav>
+
+  <div class="center-box">
+    <div class="soon-label">🚀 Launching Soon</div>
+    <div class="big">Cepatantar is <span style="color:#4666f5;">Coming Soon</span></div>
+    <div class="sub">
+      Next-gen safe and anonymous companionship platform for working professionals battling loneliness and anxiety.<br><br>
+      Connect with trained companions through milestone-driven communication.<br>Start with chat, progress to voice and video calls, and unlock in-person meetups—all while maintaining your privacy and comfort.
+    </div>
+    <form class="email-form" onsubmit="subscribe(event)">
+      <input type="email" id="email" placeholder="Enter your email" required />
+      <button type="submit">Get Early Access</button>
+    </form>
+    <div class="features">
+      <div class="feature"><i class="fas fa-comment-dots"></i><span>Anonymous Chat</span></div>
+      <div class="feature"><i class="fas fa-phone"></i><span>Voice Calls</span></div>
+      <div class="feature"><i class="fas fa-video"></i><span>Video Sessions</span></div>
+      <div class="feature"><i class="fas fa-shield-alt"></i><span>Safe Meetups</span></div>
+    </div>
+  </div>
+  <div class="footer">
+    <span style="color:#4666f5;"><i class="fas fa-shield-check"></i></span>
+    Not a dating app. Privacy & Safety prioritized.<br>
+    © 2025 Cepatantar. All rights reserved.
+  </div>
+  <script>
+    function subscribe(e) {
+      e.preventDefault();
+      alert('Thank you for joining our waitlist! We will keep you updated.');
+      document.getElementById('email').value = '';
+    }
+  </script>
+</body>
+</html>
